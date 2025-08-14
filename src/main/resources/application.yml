@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: cert-auth-app
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:server-keystore.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    trust-store: classpath:server-truststore.p12
+    trust-store-password: changeit
+    client-auth: need
+  port: 8443
+

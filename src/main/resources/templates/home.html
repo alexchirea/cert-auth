@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h2 th:text="|Hello, ${user.commonName}!|" />
+
+<h3>User Details</h3>
+<table style="border: 1px solid black;">
+    <tr>
+        <th>Email</th>
+        <td th:text="${user.email}"></td>
+    </tr>
+    <tr>
+        <th>Common Name</th>
+        <td th:text="${user.commonName}"></td>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <td th:text="${user.firstName}"></td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td th:text="${user.lastName}"></td>
+    </tr>
+    <tr>
+        <th>DN Serial Number</th>
+        <td th:text="${user.dnSerialNumber}"></td>
+    </tr>
+    <tr>
+        <th>Serial Number</th>
+        <td th:text="${user.serialNumber}"></td>
+    </tr>
+    <tr>
+        <th>Issuer DN</th>
+        <td th:text="${user.issuerDn}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
